@@ -12,8 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Update release for ${{ github.event.client_payload.ReleaseBranchName }}
-      uses: actions/github-script@v2
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
